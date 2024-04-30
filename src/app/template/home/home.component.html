@@ -1,0 +1,608 @@
+<!-- topbar-->
+<div id="topbar" class="d-flex align-items-center fixed-top">
+  <div class="container d-flex justify-content-between">
+    <div class="contact-info d-flex align-items-center">
+      <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">aaloclinic&#64;info.com</a>
+      <i class="bi bi-phone"></i> +880-1710-661386
+    </div>
+    <div class="d-none d-lg-flex social-links align-items-center">
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+
+<!--navbar-->
+<nav id="navbar" class=" shadow navbar navbar-expand-lg navbar-light bg-light">
+  <div class=" shadow container-fluid justify-content-end">
+    <div class="row">
+      <img src="https://aaloclinic.techsapient.net/wp-content/uploads/2024/03/logoAalo.png"
+           style="height: 70px; padding-left: 100px;">
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
+        <li class="nav-item">
+          <a class="btn btn-default" href=" " role="button"
+          >
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item dropdown" ngbDropdown>
+          <a class="btn btn-default" href="/about-us" id="aboutUsDropdown" role="button" ngbDropdownToggle
+             (click)="goToAboutPage()">
+            About Us
+          </a>
+          <div class="dropdown-menu" ngbDropdownMenu aria-labelledby="aboutUsDropdown">
+            <a class="dropdown-item" href="#">Who we are?</a>
+            <a class="dropdown-item" href="#">What we do?</a>
+            <a class="dropdown-item" href="#">Supported By</a>
+            <a class="dropdown-item" href="#">Managed By</a>
+          </div>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="btn btn-default dropdown-toggle" href="/dashboard" id="dashboardDropdown" role="button"
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="goToDashboardPage()">
+            <a routerLink="/dashboard"></a> Dashboard
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dashboardDropdown">
+            <a class="dropdown-item" href="#">Central Dashboard</a>
+            <a class="dropdown-item" href="#">Karail Clinic</a>
+            <a class="dropdown-item" href="#">Mirpur Clinic</a>
+            <a class="dropdown-item" href="#">Ershadnagar Clinic</a>
+            <a class="dropdown-item" href="#">Dhalpur Clinic</a>
+            <a class="dropdown-item" href="#">Shyampur Clinic</a>
+            <a class="dropdown-item" href="#">Narayanganj Clinic</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="btn btn-default dropdown-toggle" href="/activities" id="activitiesDropdown" role="button"
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="goToActivitiesPage()">
+            Activities
+          </a>
+          <div class="dropdown-menu" aria-labelledby="activitiesDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="btn btn-default dropdown-toggle" href="/activities" id="eventsDropdown" role="button"
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="goToEventsPage()">
+            Events
+          </a>
+          <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+            <a class="dropdown-item" href="#">Clinic Operations</a>
+            <a class="dropdown-item" href="#">Outreach Operations</a>
+            <a class="dropdown-item" href="#">Community Activities</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="btn btn-default dropdown-toggle" href="/activities" id="stakeholdersDropdown" role="button"
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="goToStakeholdersPage()">
+            Stakeholders
+          </a>
+          <div class="dropdown-menu" aria-labelledby="stakeholdersDropdown">
+            <a class="dropdown-item" href="#">GOB</a>
+            <a class="dropdown-item" href="#">Non Govt.</a>
+            <a class="dropdown-item" href="#">Referral Center</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="btn btn-default dropdown-toggle" href="/activities" id="carrerDropdown" role="button"
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="goToCareerPage()">
+            Career
+          </a>
+          <div class="dropdown-menu" ari a-labelledby="carrerDropdown">
+            <a class="dropdown-item" href="#">Jobs in Project Team</a>
+            <a class="dropdown-item" href="#">Jobs in Clinics</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="btn btn-default dropdown-toggle" href="/activities" id="contactusDropdown" role="button"
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="goToCareerPage()">
+            Contact Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="contactusDropdown">
+            <a class="dropdown-item" href="#">Project Team</a>
+            <a class="dropdown-item" href="#">Project Office</a>
+            <a class="dropdown-item" href="#">Clinic In Charge</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Slide -->
+<div id="carouselExampleIndicators" class=" carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active n2-"
+            aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/slider/slider-1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/slider/slider-2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/slider/slider-3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/slider/slider-4.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carusel_1"   data-bs-target="#carouselExampleIndicators" role="button" data-bs-slide="prev" >
+   <span class="carousel-control-prev-icon" aria-hidden="true">
+   </span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel_1"  data-bs-target="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+    <span class="carousel-control-next-icon" aria-hidden="true">
+    </span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+
+<!--featured-service-->
+<div class=" grid-view justify-content-center text-center">
+
+  <div class="  card">
+    <div class="card-body">
+      <h5 class="card-title">Registered Paitent</h5><br>
+      <div class="icon"><i class="fa fa-users"></i></div>
+      <br>
+      <p class="card-text">Voluptatum deleniti atque corrupti 2 times per month quas molestias excepturi</p>
+
+    </div>
+  </div>
+
+  <div class=" card">
+    <div class="card-body">
+      <h5 class="card-title">Health Screening</h5><br>
+      <div class="icon"><i class="fa fa-heartbeat"></i></div>
+      <br>
+      <p class="card-text">Voluptatum deleniti atque corrupti 2 times per month quas molestias excepturi.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Outreach Service</h5><br>
+      <div class="icon"><i class="fa fa-stethoscope"></i></div>
+      <br>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">EPI</h5><br>
+      <div class="icon"><i class="fa fa-syringe"></i></div>
+      <br>
+
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+
+    </div>
+  </div>
+
+  <div class=" card">
+    <div class="card-body">
+      <h5 class="card-title">Day Care Approach</h5><br>
+      <div class="icon"><i class="fas fa-hand-holding-medical"></i></div>
+      <br>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="grid-view grid-view-2 text-center featured-services">
+
+  <div class="  card">
+    <div class="card-body">
+      <h5 class="card-title">Prescription</h5><br>
+      <div class="icon"><i class="fa fa-file-prescription"></i></div>
+      <br>
+      <p class="card-text">Voluptatum deleniti atque corrupti 2 times per month quas molestias excepturi</p>
+
+    </div>
+  </div>
+
+  <div class="  card">
+    <div class="card-body">
+      <h5 class="card-title">Counseling</h5><br>
+      <div class="icon"><i class="fa fa-dna"></i></div>
+      <br>
+      <p class="card-text">Voluptatum deleniti atque corrupti 2 times per month quas molestias excepturi.</p>
+    </div>
+  </div>
+
+  <div class=" card">
+    <div class="card-body">
+      <h5 class="card-title">Medical Disbursement</h5><br>
+      <div class="icon"><i class="fa fa-capsules"></i></div>
+      <br>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+    </div>
+  </div>
+
+  <div class=" card">
+    <div class="card-body">
+      <h5 class="card-title">Lab Test</h5><br>
+      <div class="icon"><i class="fa fa-hospital"></i></div>
+      <br>
+
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+
+    </div>
+  </div>
+</div>
+
+<!--about-us section-->
+<section id="about" class="about">
+  <div class="conatiner ">
+    <div class="section-title">
+      <h2>About US</h2>
+
+      <div class="d-flex justify-content-center">
+        <hr style="width: 100px;height: 1px;">
+      </div>
+      <div class="d-flex justify-content-center">
+        <div style="background-color: dodgerblue;width: 34px;height: 4px;margin-top: -19px"></div>
+      </div>
+
+      <p class=" container mx-md-4">The government and NGOs are planning to develop an urban Primary Health Care (PHC)
+        project
+        at the backdrop of gradual phasing out of existing NGOs-based urban clinics. UNICEF
+        came forward and engaged a group of consultants involving Public Health,
+        Health Economics and ICT experts to design the “Model Urban PHC Clinics
+        (Aalo Clinics)” which was later endorsed by the government. .
+      </p>
+    </div>
+    <div class="text-center justify-content-center">
+      <div class="container-fluid video-box justify-content-center
+     align-items-stretch position-relative" style="background: none">
+        <iframe class="video1" width="400" height="300"
+                src="https://www.youtube.com/embed/1A7B3fF_rkc?si=Q5x1mvITyT3hsdEH" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        <iframe class="video2" width="400" height="300"
+                src="https://www.youtube.com/embed/5q30MlGubmc?si=Z8RbMK0YUvLAHr8X" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        <iframe class="video3" width="400" height="300"
+                src="https://www.youtube.com/embed/xyI32gNUIhk?si=u-yx9awPICq7dawE" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--count-section-->
+<div class="">
+  <div class="m-2 row justify-content-center mx-lg-0 mx-md-1 mx-sm-2 mt-5 p-md-5">
+    <div class=" shadow card m-2  p-3 col-lg-2 col-md-6 col-sm-12 align-content-start">
+      <div class="d-flex align-items-center">
+        <i class="fas fa-user-md p-2" style="color:#1977cc;font-size: 30px;"></i>
+        <h2 class="mx-2 count-number count-box">30</h2>
+      </div>
+      <div class="d-flex">
+        <h2 class="count-name">Doctors</h2>
+
+      </div>
+    </div>
+    <div class=" shadow card m-2 p-3 col-lg-2 col-md-6 col-sm-12 align-content-start">
+      <div class="d-flex align-items-center">
+        <i class="far fa-hospital p-2" style="color:#1977cc;font-size:30px;"></i>
+        <h2 class="mx-2 count-number">6</h2>
+      </div>
+      <div class="d-flex">
+        <h2 class="count-name">Clinics</h2>
+
+      </div>
+    </div>
+    <div class=" shadow card m-2 p-3 col-lg-2 col-md-6 col-sm-12 align-content-start">
+      <div class="d-flex align-items-center">
+        <i class="fas fa-flask p-2" style="color:#1977cc;font-size:30px;"></i>
+        <h2 class="mx-2 count-number">23</h2>
+      </div>
+      <div class="d-flex">
+        <h2 class="count-name">Services</h2>
+
+      </div>
+    </div>
+    <div class=" shadow card m-2 p-3 col-lg-2 col-md-6 col-sm-12 align-content-start">
+      <div class="d-flex align-items-center">
+        <i class="fas fa-award p-2" style="color:#1977cc;font-size:30px"></i>
+        <h2 class="mx-2 count-number">45</h2>
+      </div>
+      <div class="d-flex">
+        <h2 class="count-name">Outreach Point</h2>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--    clinic-adress-->
+<div class=" m-5 p-3 justify-content-center">
+  <h2>Our Clinic Address</h2>
+  <div class="d-flex justify-content-center">
+    <hr style="width: 100px;height: 1px;">
+  </div>
+  <div class="d-flex justify-content-center">
+    <div style="background-color: dodgerblue;width: 34px;height: 4px;margin-top: -19px"></div>
+  </div>
+  <p>Communication leads to community, that is, to understanding, intimacy and mutual valuing.</p>
+  <div class="m-5 row align-items-center grid-view-3">
+    <div class=" card p-3" style="background-color: #F3F8F2; border: 4px solid #3581B8;">
+      <div>
+        <h3 class="fw-normal fs-3 pb-2">Aalo Clinic : Karail</h3>
+        <h4 class="fw-normal text-secondary">CIC: Touhidul Islam</h4>
+        <h5 class="fw-normal text-secondary pb-2">CIC Number: 01645763353</h5>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58414.31672434508!2d90.36918867890284!3d23.7867603745461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7c5c5a5b4d9%3A0xa9dd1219c37200d4!2zQWFsbyBDbGluaWMsIEthcmFpbCAo4KaG4Kay4KeLIOCmleCnjeCmsuCmv-CmqOCmv-CmlSwg4KaV4Kec4Ka-4KaH4KayKQ!5e0!3m2!1sen!2sbd!4v1693193749611!5m2!1sen!2sbd"
+        style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <div class=" card p-3 " style="background-color: #F3F8F2; border: 4px solid #3581B8;">
+      <div>
+        <h3 class="fw-normal fs-3 pb-2">Aalo Clinic : Karail</h3>
+        <h4 class="fw-normal text-secondary">CIC: Touhidul Islam</h4>
+        <h5 class="fw-normal text-secondary pb-2">CIC Number: 01645763353</h5>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58414.31672434508!2d90.36918867890284!3d23.7867603745461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7c5c5a5b4d9%3A0xa9dd1219c37200d4!2zQWFsbyBDbGluaWMsIEthcmFpbCAo4KaG4Kay4KeLIOCmleCnjeCmsuCmv-CmqOCmv-CmlSwg4KaV4Kec4Ka-4KaH4KayKQ!5e0!3m2!1sen!2sbd!4v1693193749611!5m2!1sen!2sbd"
+        style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <div class=" card  p-3" style="background-color: #F3F8F2; border: 4px solid #3581B8;">
+      <div>
+        <h3 class="fw-normal fs-3 pb-2">Aalo Clinic : Karail</h3>
+        <h4 class="fw-normal text-secondary">CIC: Touhidul Islam</h4>
+        <h5 class="fw-normal text-secondary pb-2">CIC Number: 01645763353</h5>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58414.31672434508!2d90.36918867890284!3d23.7867603745461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7c5c5a5b4d9%3A0xa9dd1219c37200d4!2zQWFsbyBDbGluaWMsIEthcmFpbCAo4KaG4Kay4KeLIOCmleCnjeCmsuCmv-CmqOCmv-CmlSwg4KaV4Kec4Ka-4KaH4KayKQ!5e0!3m2!1sen!2sbd!4v1693193749611!5m2!1sen!2sbd"
+        style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <div class=" card  p-3  " style="background-color: #F3F8F2; border: 4px solid #3581B8;">
+      <div>
+        <h3 class="fw-normal fs-3 pb-2">Aalo Clinic : Karail</h3>
+        <h4 class="fw-normal text-secondary">CIC: Touhidul Islam</h4>
+        <h5 class="fw-normal text-secondary pb-2">CIC Number: 01645763353</h5>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58414.31672434508!2d90.36918867890284!3d23.7867603745461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7c5c5a5b4d9%3A0xa9dd1219c37200d4!2zQWFsbyBDbGluaWMsIEthcmFpbCAo4KaG4Kay4KeLIOCmleCnjeCmsuCmv-CmqOCmv-CmlSwg4KaV4Kec4Ka-4KaH4KayKQ!5e0!3m2!1sen!2sbd!4v1693193749611!5m2!1sen!2sbd"
+        style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <div class=" card  p-3 " style="background-color: #F3F8F2; border: 4px solid #3581B8;">
+      <div>
+        <h3 class="fw-normal fs-3 pb-2">Aalo Clinic : Karail</h3>
+        <h4 class="fw-normal text-secondary">CIC: Touhidul Islam</h4>
+        <h5 class="fw-normal text-secondary pb-2">CIC Number: 01645763353</h5>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58414.31672434508!2d90.36918867890284!3d23.7867603745461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7c5c5a5b4d9%3A0xa9dd1219c37200d4!2zQWFsbyBDbGluaWMsIEthcmFpbCAo4KaG4Kay4KeLIOCmleCnjeCmsuCmv-CmqOCmv-CmlSwg4KaV4Kec4Ka-4KaH4KayKQ!5e0!3m2!1sen!2sbd!4v1693193749611!5m2!1sen!2sbd"
+        style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <div class=" card  p-3 " style="background-color: #F3F8F2; border: 4px solid #3581B8;">
+      <div>
+        <h3 class="fw-normal fs-3 pb-2">Aalo Clinic : Karail</h3>
+        <h4 class="fw-normal text-secondary">CIC: Touhidul Islam</h4>
+        <h5 class="fw-normal text-secondary pb-2">CIC Number: 01645763353</h5>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58414.31672434508!2d90.36918867890284!3d23.7867603745461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7c5c5a5b4d9%3A0xa9dd1219c37200d4!2zQWFsbyBDbGluaWMsIEthcmFpbCAo4KaG4Kay4KeLIOCmleCnjeCmsuCmv-CmqOCmv-CmlSwg4KaV4Kec4Ka-4KaH4KayKQ!5e0!3m2!1sen!2sbd!4v1693193749611!5m2!1sen!2sbd"
+        style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!--project-office-->
+<div class=" justify-content-center">
+  <h2>Our Clinic Address</h2>
+  <div class="d-flex justify-content-center">
+    <hr style="width: 100px;height: 1px;">
+  </div>
+  <div class="d-flex justify-content-center">
+    <div style="background-color: dodgerblue;width: 34px;height: 4px;margin-top: -19px"></div>
+  </div>
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14606.035185601828!2d90.39435333553796!3d23.76488970392805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7802ead4bab%3A0x6dfc20845f89d9e7!2sRoad-8%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1683538899347!5m2!1sen!2sbd"
+  width="100%" height="363" style="border:0;" allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+
+</iframe>
+</div>
+<div class=" container">
+  <div class="row mt-5 ">
+    <div class="col-lg-4">
+      <div class=" contacts info d-flex flex-column align-items-start justify-content-start">
+        <div class="address">
+          <div class="d-flex align-items-baseline">
+            <i class="bi bi-geo-alt fs-4 mr-2"></i>
+            <h4 class="mt-2" style="font-size :24px; color: #2c4964;">Location:</h4>
+          </div>
+          <p class="mt-2 mb-2">Apt # 3B, House #8A,Road #8, Gulshan 1,Dhaka 1212 </p>
+        </div>
+        <div class="email">
+          <div class="d-flex align-items-baseline">
+            <i class="bi bi-envelope fs-4 mr-2"></i>
+            <h4 class="mt-2 mb-2" style="font-size :22px; color: #2c4964;">Email:</h4>
+          </div>
+          <p class="mt-2">info&#64;aaloclinic.org</p>
+        </div>
+        <div class="phone">
+          <div class="d-flex align-items-baseline">
+            <i class="bi bi-phone fs-4 mr-2"></i>
+            <h4 class="mt-2" style="font-size :22px; color: #2c4964;">Call:</h4>
+          </div>
+          <p class="mt-2 mb-5">+880-171-0661386</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8 form-group">
+      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+      <div class=" form-group mt-3 ">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+
+      </div>
+
+      <div class="form-group mt-3">
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+      </div>
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit">Send Message</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<footer>
+
+  <div class=" container container-fluid mt-3">
+    <div class="row justify-content-around">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-info">
+          <h3>Aalo Clinic</h3>
+          <p class="justify-content-start">
+            Apt # 3B, House # 8A, Road # 8 <br> Gulshan 1, Dhaka 1212<br>
+
+            <strong>Phone:</strong> +880-1710-661386<br>
+            <strong>Email:</strong> info&#64;aaloclinic.org<br>
+          </p>
+
+          <div class="social-link mt-3" id="footer-links">
+            <a href="https://www.facebook.com/groups/577400563258704" class="facebook"><i
+              class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6 offset-lg-1 col-md-6 footer-links">
+        <div class="footer-info">
+          <h3 class="d-flex text-center ml-5">Our Clinics</h3>
+          <div class="clinic-links d-flex justify-content-space-between">
+            <ul>
+              <li><i class=" fa fa-chevron-right"></i> <a
+                href="https://karail.aaloclinic.org/openmrs/module/urbancustom/dashboard-public.htm">Karail</a></li>
+              <li><i class=" fa fa-chevron-right"></i> <a
+                href="https://shyampur.aaloclinic.org/openmrs/module/urbancustom/dashboard-public.htm">Shaympur</a></li>
+            </ul>
+            <ul>
+              <li><i class=" fa fa-chevron-right"></i> <a
+                href="https://mirpur.aaloclinic.org/openmrs/module/urbancustom/dashboard-public.htm">Mirpur</a></li>
+              <li><i class=" fa fa-chevron-right"></i> <a
+                href="https://ershadnagar.aaloclinic.org/openmrs/module/urbancustom/dashboard-public.htm">Ershad
+                Nagar</a></li>
+            </ul>
+            <ul>
+              <li><i class=" fa fa-chevron-right"></i> <a
+                href="https://dhalpur.aaloclinic.org//openmrs/module/urbancustom/dashboard-public.htm">Dhalpur</a></li>
+              <li><i class=" fa fa-chevron-right"><a
+                href="https://narayanganj.aaloclinic.org/openmrs/module/urbancustom/dashboard-public.htm">Narayanganj</a></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="footer-content d-flex justify-content-center flex-wrap">
+      <img src="https://aaloclinic.techsapient.net/wp-content/themes/aaloclinic/img/sweden.png"
+           style="height: 50px; padding: 10px 10px 0;">
+      <img src="https://aaloclinic.techsapient.net/wp-content/themes/aaloclinic/img/cmed_without_border.png"
+           style="height: 50px; padding: 10px 10px 0;">
+      <img src="https://aaloclinic.techsapient.net/wp-content/themes/aaloclinic/img/PHD_Logo.png"
+           style="height: 80px; padding: 10px 10px 0;">
+      <img src="https://aaloclinic.techsapient.net/wp-content/themes/aaloclinic/img/Logo_NM.jpg"
+           style="height: 80px; padding: 10px 10px 0;">
+      <img src="https://aaloclinic.techsapient.net/wp-content/themes/aaloclinic/img/unicef_1.png"
+           style="height: 60px; padding: 10px 10px 0;">
+    </div>
+  </div>
+  <br>
+</footer>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center active">
+  <i class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
